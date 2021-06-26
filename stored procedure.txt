@@ -1,0 +1,8 @@
+DELIMITER &&
+ CREATE PROCEDURE Stu_code()
+ BEGIN
+ SELECT*FROM student WHERE Stu_code>104;
+ END &&
+ DELIMITER ;
+ 
+ CALL Stu_code();
